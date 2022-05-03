@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-05-03T14:17:01.214Z"
+    "x-generation-date": "2022-05-03T14:49:50.206Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -27,7 +27,7 @@
   },
   "servers": [
     {
-      "url": "http://localhost:1337/api",
+      "url": "https://blooming-basin-74293.herokuapp.com/api",
       "description": "Development server"
     }
   ],
