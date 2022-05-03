@@ -22,15 +22,5 @@ module.exports = [
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
-  'strapi::public',
-  {
-    name: 'global::test-middleware',
-    config: {
-      foo: 'bar',
-    },
-  },
-  {
-    resolve: './src/custom/middleware.js',
-    config: {},
-  }
+  'strapi::public'
 ];
