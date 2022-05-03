@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "shelf_products",
+  "collectionName": "products",
   "info": {
-    "singularName": "shelf-product",
-    "pluralName": "shelf-products",
-    "displayName": "shelf_products"
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "products"
   },
   "options": {
     "draftAndPublish": true
@@ -13,15 +13,6 @@
   "attributes": {
     "name": {
       "type": "string"
-    },
-    "description": {
-      "type": "richtext"
-    },
-    "price": {
-      "type": "decimal"
-    },
-    "sale": {
-      "type": "boolean"
     },
     "images": {
       "allowedTypes": [
@@ -32,9 +23,6 @@
       ],
       "type": "media",
       "multiple": true
-    },
-    "date_published": {
-      "type": "date"
     }
   }
 }

@@ -31,6 +31,10 @@ module.exports = () => ({
             },
         },
     },
+    upload: {
+        enabled: true,
+        resolve: `./src/plugins/upload`,
+    },
     myplugin: {
         enabled: true,
         resolve: `./src/plugins/myplugin`, // From the root of the project

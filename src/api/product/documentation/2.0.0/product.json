@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/shelf-products": {
+    "/products": {
       "get": {
         "responses": {
           "200": {
@@ -22,16 +22,6 @@
                             "properties": {
                               "name": {
                                 "type": "string"
-                              },
-                              "description": {
-                                "type": "string"
-                              },
-                              "price": {
-                                "type": "number",
-                                "format": "float"
-                              },
-                              "sale": {
-                                "type": "boolean"
                               },
                               "images": {
                                 "type": "object",
@@ -398,6 +388,9 @@
                                                   }
                                                 }
                                               }
+                                            },
+                                            "placeholder": {
+                                              "type": "string"
                                             }
                                           }
                                         }
@@ -405,10 +398,6 @@
                                     }
                                   }
                                 }
-                              },
-                              "date_published": {
-                                "type": "string",
-                                "format": "date"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -887,7 +876,7 @@
           }
         },
         "tags": [
-          "Shelf-product"
+          "Product"
         ],
         "parameters": [
           {
@@ -971,7 +960,7 @@
             }
           }
         ],
-        "operationId": "get/shelf-products"
+        "operationId": "get/products"
       },
       "post": {
         "responses": {
@@ -992,16 +981,6 @@
                           "properties": {
                             "name": {
                               "type": "string"
-                            },
-                            "description": {
-                              "type": "string"
-                            },
-                            "price": {
-                              "type": "number",
-                              "format": "float"
-                            },
-                            "sale": {
-                              "type": "boolean"
                             },
                             "images": {
                               "type": "object",
@@ -1368,6 +1347,9 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "placeholder": {
+                                            "type": "string"
                                           }
                                         }
                                       }
@@ -1375,10 +1357,6 @@
                                   }
                                 }
                               }
-                            },
-                            "date_published": {
-                              "type": "string",
-                              "format": "date"
                             },
                             "createdAt": {
                               "type": "string",
@@ -1836,10 +1814,10 @@
           }
         },
         "tags": [
-          "Shelf-product"
+          "Product"
         ],
         "parameters": [],
-        "operationId": "post/shelf-products",
+        "operationId": "post/products",
         "requestBody": {
           "required": true,
           "content": {
@@ -1851,16 +1829,6 @@
                     "properties": {
                       "name": {
                         "type": "string"
-                      },
-                      "description": {
-                        "type": "string"
-                      },
-                      "price": {
-                        "type": "number",
-                        "format": "float"
-                      },
-                      "sale": {
-                        "type": "boolean"
                       },
                       "images": {
                         "type": "array",
@@ -1875,10 +1843,6 @@
                           ],
                           "example": "string or id"
                         }
-                      },
-                      "date_published": {
-                        "type": "string",
-                        "format": "date"
                       },
                       "createdAt": {
                         "type": "string",
@@ -1923,7 +1887,7 @@
         }
       }
     },
-    "/shelf-products/{id}": {
+    "/products/{id}": {
       "get": {
         "responses": {
           "200": {
@@ -1943,16 +1907,6 @@
                           "properties": {
                             "name": {
                               "type": "string"
-                            },
-                            "description": {
-                              "type": "string"
-                            },
-                            "price": {
-                              "type": "number",
-                              "format": "float"
-                            },
-                            "sale": {
-                              "type": "boolean"
                             },
                             "images": {
                               "type": "object",
@@ -2319,6 +2273,9 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "placeholder": {
+                                            "type": "string"
                                           }
                                         }
                                       }
@@ -2326,10 +2283,6 @@
                                   }
                                 }
                               }
-                            },
-                            "date_published": {
-                              "type": "string",
-                              "format": "date"
                             },
                             "createdAt": {
                               "type": "string",
@@ -2787,7 +2740,7 @@
           }
         },
         "tags": [
-          "Shelf-product"
+          "Product"
         ],
         "parameters": [
           {
@@ -2801,7 +2754,7 @@
             }
           }
         ],
-        "operationId": "get/shelf-products/{id}"
+        "operationId": "get/products/{id}"
       },
       "put": {
         "responses": {
@@ -2823,16 +2776,6 @@
                             "name": {
                               "type": "string"
                             },
-                            "description": {
-                              "type": "string"
-                            },
-                            "price": {
-                              "type": "number",
-                              "format": "float"
-                            },
-                            "sale": {
-                              "type": "boolean"
-                            },
                             "images": {
                               "type": "object",
                               "properties": {
@@ -3198,6 +3141,9 @@
                                                 }
                                               }
                                             }
+                                          },
+                                          "placeholder": {
+                                            "type": "string"
                                           }
                                         }
                                       }
@@ -3205,10 +3151,6 @@
                                   }
                                 }
                               }
-                            },
-                            "date_published": {
-                              "type": "string",
-                              "format": "date"
                             },
                             "createdAt": {
                               "type": "string",
@@ -3666,7 +3608,7 @@
           }
         },
         "tags": [
-          "Shelf-product"
+          "Product"
         ],
         "parameters": [
           {
@@ -3680,7 +3622,7 @@
             }
           }
         ],
-        "operationId": "put/shelf-products/{id}",
+        "operationId": "put/products/{id}",
         "requestBody": {
           "required": true,
           "content": {
@@ -3692,16 +3634,6 @@
                     "properties": {
                       "name": {
                         "type": "string"
-                      },
-                      "description": {
-                        "type": "string"
-                      },
-                      "price": {
-                        "type": "number",
-                        "format": "float"
-                      },
-                      "sale": {
-                        "type": "boolean"
                       },
                       "images": {
                         "type": "array",
@@ -3716,10 +3648,6 @@
                           ],
                           "example": "string or id"
                         }
-                      },
-                      "date_published": {
-                        "type": "string",
-                        "format": "date"
                       },
                       "createdAt": {
                         "type": "string",
@@ -3923,7 +3851,7 @@
           }
         },
         "tags": [
-          "Shelf-product"
+          "Product"
         ],
         "parameters": [
           {
@@ -3937,7 +3865,7 @@
             }
           }
         ],
-        "operationId": "delete/shelf-products/{id}"
+        "operationId": "delete/products/{id}"
       }
     }
   }
