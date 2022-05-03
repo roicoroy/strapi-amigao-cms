@@ -10,7 +10,7 @@
     "env-path": "ENV_PATH=/Users/ricardobento/Documents/STRAPI/strapi-heroku/.env npm run start",
     "heroku-change-env-dev": "heroku config:set NODE_ENV=development",
     "heroku-change-env-prod": "heroku config:set NODE_ENV=production",
-    "heroku": "heroku config:set NODE_ENV=production && git add . && git commit -m 'fail' && git push heroku HEAD:main && heroku open",
+    "heroku": "heroku config:set NODE_ENV=production && git add . && git commit -m 'deploy!' && git push heroku HEAD:main && heroku open",
     "git-add": "git add . && git commit -m 'Update database config'",
     "build-develop": "npm run build && rm -r build && rm -r .cache && npm run build && npm run develop",
     "develop": "strapi develop --watch-admin",
