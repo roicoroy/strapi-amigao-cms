@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shelf_products",
+  "info": {
+    "singularName": "shelf-product",
+    "pluralName": "shelf-products",
+    "displayName": "shelf_products"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "sale": {
+      "type": "boolean"
+    },
+    "images": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "date_published": {
+      "type": "date"
+    }
+  }
+}
