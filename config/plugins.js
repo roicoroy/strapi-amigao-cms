@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = () => ({
+module.exports = ({ env }) => ({
     graphql: {
         enabled: true,
         config: {
@@ -30,10 +30,6 @@ module.exports = () => ({
                 api_secret: '3ELa56bTj-tjdmraafVDGon5p1M',
             },
         },
-    },
-    upload: {
-        enabled: true,
-        resolve: `./src/plugins/upload`,
     },
     myplugin: {
         enabled: true,
@@ -107,4 +103,22 @@ module.exports = () => ({
             },
         },
     },
+    email: {
+        config: {
+          provider: 'nodemailer',
+          providerOptions: {
+            host: env('SMTP_HOST', 'smtp.example.com'),
+            port: env('SMTP_PORT', 587),
+            auth: {
+              user: env('SMTP_USERNAME'),
+              pass: env('SMTP_PASSWORD'),
+            },
+            // ... any custom nodemailer options
+          },
+          settings: {
+            defaultFrom: 'roicoStrapi@example.com',
+            defaultReplyTo: 'hello@roicoStrapi.com',
+          },
+        },
+      },
 });
