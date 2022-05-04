@@ -130,4 +130,13 @@ module.exports = ({ env }) => ({
     //         },
     //     },
     // },
+
+    settings: {
+        cors: {
+            enabled: true,
+            // origin: ['http://localhost:8100'],
+            origin: env('CORS_ORIGIN', 'http://localhost:8100'),
+        }
+    }
+
 });
