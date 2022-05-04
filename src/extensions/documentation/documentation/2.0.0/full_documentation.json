@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-05-04T19:50:34.334Z"
+    "x-generation-date": "2022-05-04T20:59:20.515Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -27,7 +27,7 @@
   },
   "servers": [
     {
-      "url": "https://stormy-anchorage-79910.herokuapp.com/api",
+      "url": "http://localhost:1337/api",
       "description": "Development server"
     }
   ],
@@ -3896,9 +3896,6 @@
                                                   }
                                                 }
                                               }
-                                            },
-                                            "placeholder": {
-                                              "type": "string"
                                             }
                                           }
                                         }
@@ -4869,9 +4866,6 @@
                                                 }
                                               }
                                             }
-                                          },
-                                          "placeholder": {
-                                            "type": "string"
                                           }
                                         }
                                       }
@@ -5823,9 +5817,6 @@
                                                 }
                                               }
                                             }
-                                          },
-                                          "placeholder": {
-                                            "type": "string"
                                           }
                                         }
                                       }
@@ -6705,9 +6696,6 @@
                                                 }
                                               }
                                             }
-                                          },
-                                          "placeholder": {
-                                            "type": "string"
                                           }
                                         }
                                       }
@@ -8425,9 +8413,6 @@
                                   }
                                 }
                               }
-                            },
-                            "placeholder": {
-                              "type": "string"
                             }
                           }
                         }
@@ -8998,9 +8983,6 @@
                                   }
                                 }
                               }
-                            },
-                            "placeholder": {
-                              "type": "string"
                             }
                           }
                         }
@@ -9538,9 +9520,6 @@
                                     }
                                   }
                                 }
-                              },
-                              "placeholder": {
-                                "type": "string"
                               }
                             }
                           }
@@ -10178,9 +10157,6 @@
                                   }
                                 }
                               }
-                            },
-                            "placeholder": {
-                              "type": "string"
                             }
                           }
                         }

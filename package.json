@@ -22,29 +22,18 @@
   "dependencies": {
     "@strapi/admin": "4.1.8",
     "@strapi/plugin-documentation": "4.1.8",
-    "@strapi/plugin-graphql": "4.1.8",
     "@strapi/plugin-i18n": "4.1.8",
     "@strapi/plugin-users-permissions": "4.1.8",
     "@strapi/provider-email-mailgun": "^4.1.9",
-    "@strapi/provider-email-nodemailer": "^4.1.9",
     "@strapi/provider-upload-cloudinary": "4.1.8",
     "@strapi/strapi": "4.1.8",
-    "better-sqlite3": "7.4.6",
     "html-react-parser": "^1.4.12",
-    "nodemailer": "^6.7.4",
     "pg": "8.6.0",
     "pg-connection-string": "^2.5.0",
     "react-html-parser": "^2.0.2",
     "react-is": "^18.1.0",
-    "strapi-plugin-comments": "^2.1.4",
-    "strapi-plugin-email-designer": "^2.1.1",
-    "strapi-plugin-passwordless": "^4.0.5",
-    "strapi-plugin-placeholder": "^4.1.7",
     "strapi-stripe": "^1.4.0",
-    "stripe": "^8.210.0",
-    "knex": "0.21.18",
-    "sqlite3": "5.0.6",
-    "mime-types": "^2.1.27"
+    "knex": "0.21.18"
   },
   "author": {
     "name": "A Strapi developer"
