@@ -10,9 +10,9 @@ module.exports = ({ env }) => ({
         config: {
             provider: 'cloudinary',
             providerOptions: {
-                cloud_name: env('CLOUDINARY_NAME'),
-                api_key: env('CLOUDINARY_API_KEY'),
-                api_secret: env('CLOUDINARY_API_SECRET'),
+                cloud_name: env('CLOUDINARY_NAME', 'roicoroy'),
+                api_key: env('CLOUDINARY_API_KEY', '854797375527335'),
+                api_secret: env('CLOUDINARY_API_SECRET', '3ELa56bTj-tjdmraafVDGon5p1M'),
             },
         },
     },
