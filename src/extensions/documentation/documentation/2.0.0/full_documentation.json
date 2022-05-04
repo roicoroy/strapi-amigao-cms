@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2022-05-03T21:10:34.225Z"
+    "x-generation-date": "2022-05-04T13:28:48.035Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -448,6 +448,20 @@
                                     }
                                   }
                                 }
+                              },
+                              "description": {
+                                "type": "string"
+                              },
+                              "isSale": {
+                                "type": "boolean"
+                              },
+                              "price": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "date_published": {
+                                "type": "string",
+                                "format": "date"
                               },
                               "createdAt": {
                                 "type": "string",
@@ -1408,6 +1422,20 @@
                                 }
                               }
                             },
+                            "description": {
+                              "type": "string"
+                            },
+                            "isSale": {
+                              "type": "boolean"
+                            },
+                            "price": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "date_published": {
+                              "type": "string",
+                              "format": "date"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -1894,6 +1922,20 @@
                           "example": "string or id"
                         }
                       },
+                      "description": {
+                        "type": "string"
+                      },
+                      "isSale": {
+                        "type": "boolean"
+                      },
+                      "price": {
+                        "type": "number",
+                        "format": "float"
+                      },
+                      "date_published": {
+                        "type": "string",
+                        "format": "date"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -2333,6 +2375,20 @@
                                   }
                                 }
                               }
+                            },
+                            "description": {
+                              "type": "string"
+                            },
+                            "isSale": {
+                              "type": "boolean"
+                            },
+                            "price": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "date_published": {
+                              "type": "string",
+                              "format": "date"
                             },
                             "createdAt": {
                               "type": "string",
@@ -3202,6 +3258,20 @@
                                 }
                               }
                             },
+                            "description": {
+                              "type": "string"
+                            },
+                            "isSale": {
+                              "type": "boolean"
+                            },
+                            "price": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "date_published": {
+                              "type": "string",
+                              "format": "date"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -3698,6 +3768,20 @@
                           ],
                           "example": "string or id"
                         }
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "isSale": {
+                        "type": "boolean"
+                      },
+                      "price": {
+                        "type": "number",
+                        "format": "float"
+                      },
+                      "date_published": {
+                        "type": "string",
+                        "format": "date"
                       },
                       "createdAt": {
                         "type": "string",

@@ -4,7 +4,8 @@
   "info": {
     "singularName": "product",
     "pluralName": "products",
-    "displayName": "products"
+    "displayName": "products",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,14 +16,27 @@
       "type": "string"
     },
     "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isSale": {
+      "type": "boolean"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "date_published": {
+      "type": "date"
     }
   }
 }

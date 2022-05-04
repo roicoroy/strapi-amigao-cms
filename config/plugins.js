@@ -31,13 +31,10 @@ module.exports = ({ env }) => ({
             },
         },
     },
-    // myplugin: {
-    //     enabled: true,
-    //     resolve: `./src/plugins/myplugin`, // From the root of the project
-    //     config: {
-    //         testConf: 3,
-    //     },
-    // },
+    'strapi-stripe': {
+        enabled: true,
+        resolve: `./src/plugins/strapi-stripe`,
+    },
     placeholder: {
         enabled: true,
         config: {
@@ -103,23 +100,38 @@ module.exports = ({ env }) => ({
             },
         },
     },
-    email: {
-        config: {
-            provider: 'nodemailer',
-            providerOptions: {
-                host: env('SMTP_HOST', 'smtp.gmail.com'),
-                port: env('SMTP_PORT', 465),
-                auth: {
-                    user: env('SMTP_USERNAME'),
-                    pass: env('SMTP_PASSWORD'),
-                },
-                secure: true,
-                // ... any custom nodemailer options
-            },
-            settings: {
-                defaultFrom: 'richiescotland@gmail.com',
-                defaultReplyTo: 'richiescotland@gmail.com',
-            },
-        },
-    },
+    // email: {
+    //     config: {
+    //         // provider: 'nodemailer',
+    //         // providerOptions: {
+    //         //     host: env('SMTP_HOST', 'smtp.gmail.com'),
+    //         //     port: env('SMTP_PORT', 465),
+    //         //     auth: {
+    //         //         user: env('SMTP_USERNAME'),
+    //         //         pass: env('SMTP_PASSWORD'),
+    //         //     },
+    //         //     secure: true,
+    //         //     // ... any custom nodemailer options
+    //         // },
+    //         provider: 'mailgun',
+    //         providerOptions: {
+    //             auth: {
+    //                 user: env('SMTP_USERNAME'),
+    //                 pass: env('SMTP_PASSWORD'),
+    //             },
+    //             secure:false,
+    //             requireTLC:true,
+    //             port: env('SMTP_PORT', 587),
+    //             apiKey: env('MAILGUN_API_KEY'),
+    //             domain: env('MAILGUN_DOMAIN'), //Required if you have an account with multiple domains
+    //             host: env('MAILGUN_HOST', 'api.eu.mailgun.net'), //Optional. If domain region is Europe use 'api.eu.mailgun.net'
+    //         },
+    //         settings: {
+    //             // defaultFrom: 'roicoroy@yahoo.com.br',
+    //             // defaultReplyTo: 'roicoroy@yahoo.com.br',
+    //             defaultFrom: env('SMTP_USERNAME'),
+    //             defaultReplyTo: env('SMTP_USERNAME'),
+    //         },
+    //     },
+    // },
 });

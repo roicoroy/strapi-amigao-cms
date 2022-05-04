@@ -1,6 +1,15 @@
 
 
 5f3c0ec5b99a557ce3b0f4038d6d133e3ca8ecf0d853e79ff9012f764c68b7bd65cf43c690638ca4323a9e9d7167a3a1351dcdd3d81bc94c88d4dcd0dd99095a4b9461a5365c67e2781697f484ca3e1937ba8819a9973e923d2ffa6724562f529829c2589f0e31b865736dc83c5617b0d7d07aa8f624521f5a51f63cea643cb3
+
+
+
+
+https://via.placeholder.com/150
+
+
+
+
 # 🚀 Getting started with Strapi
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.

@@ -399,6 +399,20 @@
                                   }
                                 }
                               },
+                              "description": {
+                                "type": "string"
+                              },
+                              "isSale": {
+                                "type": "boolean"
+                              },
+                              "price": {
+                                "type": "number",
+                                "format": "float"
+                              },
+                              "date_published": {
+                                "type": "string",
+                                "format": "date"
+                              },
                               "createdAt": {
                                 "type": "string",
                                 "format": "date-time"
@@ -1358,6 +1372,20 @@
                                 }
                               }
                             },
+                            "description": {
+                              "type": "string"
+                            },
+                            "isSale": {
+                              "type": "boolean"
+                            },
+                            "price": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "date_published": {
+                              "type": "string",
+                              "format": "date"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -1844,6 +1872,20 @@
                           "example": "string or id"
                         }
                       },
+                      "description": {
+                        "type": "string"
+                      },
+                      "isSale": {
+                        "type": "boolean"
+                      },
+                      "price": {
+                        "type": "number",
+                        "format": "float"
+                      },
+                      "date_published": {
+                        "type": "string",
+                        "format": "date"
+                      },
                       "createdAt": {
                         "type": "string",
                         "format": "date-time"
@@ -2283,6 +2325,20 @@
                                   }
                                 }
                               }
+                            },
+                            "description": {
+                              "type": "string"
+                            },
+                            "isSale": {
+                              "type": "boolean"
+                            },
+                            "price": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "date_published": {
+                              "type": "string",
+                              "format": "date"
                             },
                             "createdAt": {
                               "type": "string",
@@ -3152,6 +3208,20 @@
                                 }
                               }
                             },
+                            "description": {
+                              "type": "string"
+                            },
+                            "isSale": {
+                              "type": "boolean"
+                            },
+                            "price": {
+                              "type": "number",
+                              "format": "float"
+                            },
+                            "date_published": {
+                              "type": "string",
+                              "format": "date"
+                            },
                             "createdAt": {
                               "type": "string",
                               "format": "date-time"
@@ -3648,6 +3718,20 @@
                           ],
                           "example": "string or id"
                         }
+                      },
+                      "description": {
+                        "type": "string"
+                      },
+                      "isSale": {
+                        "type": "boolean"
+                      },
+                      "price": {
+                        "type": "number",
+                        "format": "float"
+                      },
+                      "date_published": {
+                        "type": "string",
+                        "format": "date"
                       },
                       "createdAt": {
                         "type": "string",
