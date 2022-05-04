@@ -40,6 +40,7 @@
     "strapi-plugin-email-designer": "^2.1.1",
     "strapi-plugin-passwordless": "^4.0.5",
     "strapi-plugin-placeholder": "^4.1.7",
+    "strapi-stripe": "^1.4.0",
     "stripe": "^8.210.0"
   },
   "author": {

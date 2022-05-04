@@ -31,10 +31,6 @@ module.exports = ({ env }) => ({
             },
         },
     },
-    'strapi-stripe': {
-        enabled: true,
-        resolve: `./src/plugins/strapi-stripe`,
-    },
     placeholder: {
         enabled: true,
         config: {
