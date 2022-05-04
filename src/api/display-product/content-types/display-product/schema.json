@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "display_products",
+  "info": {
+    "singularName": "display-product",
+    "pluralName": "display-products",
+    "displayName": "displayProducts",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "strapi_stripe_strapi_stripe_products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::strapi-stripe.strapi-stripe-product",
+      "mappedBy": "display_product"
+    }
+  }
+}
