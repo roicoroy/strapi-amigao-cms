@@ -22,6 +22,19 @@ module.exports = ({ env }) => ({
             origin: ['*'],
             // origin: env('CORS_ORIGIN', 'http://localhost:8100', 'http://localhost:1337'),
         }
-    }
-
+    },
+    email: {
+        config: {
+            provider: 'mailgun',
+            providerOptions: {
+                apiKey: env('MAILGUN_API_KEY'),
+                domain: env('MAILGUN_DOMAIN'), //Required if you have an account with multiple domains
+                host: env('MAILGUN_HOST', 'api.eu.mailgun.net'), //Optional. If domain region is Europe use 'api.eu.mailgun.net'
+            },
+            settings: {
+                defaultFrom: 'roicoroy@yahoo.com.br',
+                defaultReplyTo: 'roicoroy@yahoo.com.br',
+            },
+        },
+    },
 });

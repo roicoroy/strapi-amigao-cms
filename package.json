@@ -25,15 +25,18 @@
     "@strapi/plugin-documentation": "4.1.8",
     "@strapi/plugin-i18n": "4.1.8",
     "@strapi/plugin-users-permissions": "4.1.8",
+    "@strapi/provider-email-mailgun": "^4.1.9",
     "@strapi/provider-upload-cloudinary": "4.1.8",
     "@strapi/strapi": "4.1.8",
     "html-react-parser": "^1.4.12",
+    "knex": "0.21.18",
     "pg": "8.6.0",
     "pg-connection-string": "^2.5.0",
     "react-html-parser": "^2.0.2",
     "react-is": "^18.1.0",
-    "strapi-stripe": "^1.4.0",
-    "knex": "0.21.18"
+    "strapi-plugin-passwordless": "file:./src/plugins/strapi-plugin-passwordless",
+    "strapi-stripe": "file:./src/plugins/strapi-stripe",
+    "stripe": "^8.210.0"
   },
   "author": {
     "name": "A Strapi developer"
