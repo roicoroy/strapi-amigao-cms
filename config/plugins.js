@@ -24,17 +24,41 @@ module.exports = ({ env }) => ({
         }
     },
     email: {
+        // config: {
+        //     provider: 'mailgun',
+        //     providerOptions: {
+        //         apiKey: env('MAILGUN_API_KEY'),
+        //         domain: env('MAILGUN_DOMAIN'),
+        //         host: env('MAILGUN_HOST'), //Optional. If domain region is Europe use 'api.eu.mailgun.net'
+        //     },
+        //     settings: {
+        //         defaultFrom: 'roicoroy@mercadoamigao.com',
+        //         defaultReplyTo: 'roicoroy@mercadoamigao.com',
+        //         testAddress: 'roicoroy@mercadoamigao.com',
+        //     },
+        // },
         config: {
-            provider: 'mailgun',
+            provider: 'nodemailer',
             providerOptions: {
-                apiKey: env('MAILGUN_API_KEY'),
-                domain: env('MAILGUN_DOMAIN'), //Required if you have an account with multiple domains
-                host: env('MAILGUN_HOST', 'api.eu.mailgun.net'), //Optional. If domain region is Europe use 'api.eu.mailgun.net'
+              host: env('GOOGLE_SMTP_HOST'),
+            //   port: env('SMTP_PORT', 587),
+              port: env('GOOGLE_SMTP_PORT'),
+              auth: {
+                user: env('SMTP_USERNAME'),
+                pass: env('SMTP_PASSWORD'),
+              },
+            //   auth: {
+            //     type: "OAuth2",
+            //     user: env('SMTP_USERNAME'),
+            //     accessToken: env('ACCESS_TOKEN'),
+            //   },
+              // ... any custom nodemailer options
             },
             settings: {
-                defaultFrom: 'roicoroy@yahoo.com.br',
-                defaultReplyTo: 'roicoroy@yahoo.com.br',
+                defaultFrom: 'roicoroy@mercadoamigao.com',
+                defaultReplyTo: 'roicoroy@mercadoamigao.com',
+                testAddress: 'roicoroy@yahoo.com.br',
             },
-        },
+          },
     },
 });
