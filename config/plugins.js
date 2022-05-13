@@ -6,6 +6,10 @@ module.exports = ({ env }) => ({
             },
         },
     },
+    'strapi-stripe': {
+        enabled: true,
+        resolve: `./src/plugins/strapi-stripe`,
+    },
     upload: {
         config: {
             provider: 'cloudinary',
@@ -40,25 +44,25 @@ module.exports = ({ env }) => ({
         config: {
             provider: 'nodemailer',
             providerOptions: {
-              host: env('GOOGLE_SMTP_HOST'),
-            //   port: env('SMTP_PORT', 587),
-              port: env('GOOGLE_SMTP_PORT'),
-              auth: {
-                user: env('SMTP_USERNAME'),
-                pass: env('SMTP_PASSWORD'),
-              },
-            //   auth: {
-            //     type: "OAuth2",
-            //     user: env('SMTP_USERNAME'),
-            //     accessToken: env('ACCESS_TOKEN'),
-            //   },
-              // ... any custom nodemailer options
+                host: env('GOOGLE_SMTP_HOST'),
+                //   port: env('SMTP_PORT', 587),
+                port: env('GOOGLE_SMTP_PORT'),
+                auth: {
+                    user: env('SMTP_USERNAME'),
+                    pass: env('SMTP_PASSWORD'),
+                },
+                //   auth: {
+                //     type: "OAuth2",
+                //     user: env('SMTP_USERNAME'),
+                //     accessToken: env('ACCESS_TOKEN'),
+                //   },
+                // ... any custom nodemailer options
             },
             settings: {
                 defaultFrom: 'roicoroy@mercadoamigao.com',
                 defaultReplyTo: 'roicoroy@mercadoamigao.com',
                 testAddress: 'roicoroy@yahoo.com.br',
             },
-          },
+        },
     },
 });
