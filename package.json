@@ -40,7 +40,7 @@
     "react-html-parser": "^2.0.2",
     "react-is": "^18.1.0",
     "strapi-plugin-passwordless": "^4.0.5",
-    "strapi-stripe": "file:src/plugins/strapi-stripe",
+    "strapi-stripe": "^1.9.0",
     "stripe": "^8.210.0"
   },
   "author": {

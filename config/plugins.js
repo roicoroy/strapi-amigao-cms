@@ -8,7 +8,7 @@ module.exports = ({ env }) => ({
     },
     'strapi-stripe': {
         enabled: true,
-        resolve: `./src/plugins/strapi-stripe`,
+        resolve: `./src/plugins/mercado-plugin`,
     },
     upload: {
         config: {
