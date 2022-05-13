@@ -29,19 +29,19 @@
     "@strapi/provider-email-nodemailer": "^4.1.10",
     "@strapi/provider-upload-cloudinary": "4.1.8",
     "@strapi/strapi": "4.1.8",
+    "cz-conventional-changelog": "3.3.0",
     "firebase-admin": "^10.2.0",
     "html-react-parser": "^1.4.12",
+    "jest": "^27.5.1",
     "knex": "0.21.18",
     "nodemailer": "^6.7.5",
     "pg": "8.6.0",
     "pg-connection-string": "^2.5.0",
     "react-html-parser": "^2.0.2",
     "react-is": "^18.1.0",
-    "strapi-plugin-passwordless": "file:./src/plugins/strapi-plugin-passwordless",
-    "strapi-stripe": "file:./src/plugins/strapi-stripe",
-    "stripe": "^8.210.0",
-    "cz-conventional-changelog": "3.3.0",
-    "jest": "^27.5.1"
+    "strapi-plugin-passwordless": "^4.0.5",
+    "strapi-stripe": "^1.9.0",
+    "stripe": "^8.210.0"
   },
   "author": {
     "name": "A Strapi developer"
