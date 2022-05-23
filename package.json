@@ -14,7 +14,7 @@
     "git-add": "git add . && git commit -m 'Update database config'",
     "build-develop": "npm run build && rm -r build && rm -r .cache && npm run build && npm run develop",
     "clear-cache": "rm -r build && rm -r .cache && rm -r node_modules",
-    "develop": "strapi develop",
+    "develop": "rm -r build && rm -r .cache && strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi",
