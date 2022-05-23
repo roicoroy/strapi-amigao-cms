@@ -17,9 +17,8 @@ const ContentBlocks = () => {
 
   return (
     <Stack spacing={5}>
-      
-      {/* <BlockLink
-        href="https://strapi.io/resource-center"
+      <BlockLink
+        href="mercadoamigao.com"
         target="_blank"
         rel="noopener noreferrer nofollow"
       >
@@ -35,7 +34,8 @@ const ContentBlocks = () => {
           icon={<InformationSquare />}
           iconBackground="primary100"
         />
-      </BlockLink> */}
+      </BlockLink>
+      {/*  */}
       {/* <BlockLink
         href="https://strapi.io/starters"
         target="_blank"
