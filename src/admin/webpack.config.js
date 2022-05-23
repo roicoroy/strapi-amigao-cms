@@ -11,10 +11,10 @@ module.exports = (config, webpack) => {
 
   config.plugins.push(
     new webpack.NormalModuleReplacementPlugin(
-      /admin\/src\/(.*).js/,
+      /admin\/src\/pages\/HomePage(.*).js/,
       (resource) => {
         if (resource.createData.resource) {
-          const replacedFilePath = resource.createData.resource.replace(strapiCacheSrcPath, path.resolve(__dirname, 'ui'));
+          const replacedFilePath = resource.createData.resource.replace(strapiCacheSrcPath, path.resolve(__dirname, 'src'));
           if (replacedFilePath.endsWith('.js')) {
             resource.createData.resource = replacedFilePath;
           }
@@ -26,3 +26,4 @@ module.exports = (config, webpack) => {
 
   return config;
 };
+// /Users/ricardobento/Documents/STRAPI/strapi-amigao-cms/node_modules/@strapi/admin/admin/src/pages/HomePage

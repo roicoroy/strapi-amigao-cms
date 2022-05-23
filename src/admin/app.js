@@ -1,6 +1,3 @@
-import theme from './extensions/theme';
-import head from './extensions/head';
-import menu from './extensions/menu';
 import Logo from 'assets/logo.svg';
 
 export default {
